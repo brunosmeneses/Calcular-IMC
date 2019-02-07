@@ -1,0 +1,19 @@
+body{
+	background-color: #87CEFA;
+}
+
+span{
+	color: #f3f3f3;
+}
+
+#res, #cls{
+	font-size: 70px;
+}
+
+.res{
+	border: 1px solid black;
+	background-color: #f3f3f3;
+}
+.valida{
+	border: 1px solid red;
+}

@@ -3,65 +3,44 @@
 <head>
 	<meta charset="utf-8">
 	<title>IMC</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-	<link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 <body>
 	
     <div class="container">
-        <h1>IMC</h1>
+        <br><br>
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-3">
+                <h1>I<span>M</span>C</h1>
+            </div>
+            <div class="col-sm-3">
+                <label for="peso">Peso:</label>
+                <input type="text" class="form-control" id="peso" placeholder="00.0" name="peso">
+            </div>
+            <div class="col-sm-3">
+                <label for="altura">Altura:</label>
+                <input type="text" class="form-control" id="altura" placeholder="0.00" name="altura">
+            </div>
+            <div class="col-sm-3">
+                <button id="calcular" type="button" class="btn btn-primary" onsubmit="return validar()">Calcular</button>
+            </div>
+        </div>
+        <br><br><br>
+        <div id="div">
+            <div class="d-flex justify-content-center"><p id="res"></p></div>
+            <div class="d-flex justify-content-center"><p id="cls"></p></div>
+        </div>
+            
+            
 
-        <form id="form-adiciona" class="form-horizontal">
-            <div class="form-group col-xs-4">
-                <label for="nome" class="col-sm-2 control-label">Nome:</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="nome" placeholder="Nome" name="nome">
-                </div>
-            </div>
-            <div class="form-group col-xs-4">
-                <label for="peso" class="col-sm-2 control-label">Peso:</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="peso" placeholder="00.0" name="peso">
-                </div>
-            </div>
-            <div class="form-group col-xs-4">
-                <label for="altura" class="col-sm-2 control-label">Altura:</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="altura" placeholder="0.00" name="altura">
-                </div>
-            </div>
-            <div class="form-group text-center">
-                <button id="adicionar" type="button" class="btn btn-primary">Adicionar</button>
-            </div>
-        </form>
-    </div>
-
-    <section class="container">
-        <table id = tab class="table table-bordered">
-            <tbody>
-                <tr>
-                    <th>Nome</th>
-                    <th>Peso(kg)</th>
-                    <th>Altura(m)</th>
-                    <th>IMC</th>
-                </tr>
-            </tbody>
-        </table>
-        <form class="form-inline">
-            <button id="class" type="button" class="btn btn-primary" onclick="classificacao()">Classificação</button>
-            <div class="form-group">
-            <input type="text" name="imc" class="form-control" id="imc" placeholder="Imc" onfocus="this.value='';">
-            </div>
-        </form>
-        <p id="show" class="h1 text-center"></p>
-    </section>
-
+ 
 </body>
 
-    <script src="js/calcular-imc.js"></script>
-    <script src="js/adicionar.js"></script>
-    <script src="js/classificacao.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
 
 </html>
