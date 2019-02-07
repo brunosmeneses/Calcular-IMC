@@ -1,2 +1,2 @@
 # Calcular-IMC
-Calculo de Imc com JS
+Calculo de Índice de massa corporal (IMC)
